@@ -1,0 +1,27 @@
+{
+  "category": "Logic",
+  "color": "#F44336",
+  "blocks": [
+    { "type": "logic_and", "label": "A && B",  "shape": "expression",
+      "params": [{"name":"a","type":"expression","default":"x"},{"name":"b","type":"expression","default":"y"}],
+      "code": "({a} && {b})" },
+    { "type": "logic_or",  "label": "A || B",  "shape": "expression",
+      "params": [{"name":"a","type":"expression","default":"x"},{"name":"b","type":"expression","default":"y"}],
+      "code": "({a} || {b})" },
+    { "type": "logic_not", "label": "!A",      "shape": "expression",
+      "params": [{"name":"a","type":"expression","default":"x"}],
+      "code": "(!{a})" },
+    { "type": "logic_eq",  "label": "A == B",  "shape": "expression",
+      "params": [{"name":"a","type":"expression","default":"x"},{"name":"b","type":"expression","default":"0"}],
+      "code": "({a} == {b})" },
+    { "type": "logic_neq", "label": "A != B",  "shape": "expression",
+      "params": [{"name":"a","type":"expression","default":"x"},{"name":"b","type":"expression","default":"0"}],
+      "code": "({a} != {b})" },
+    { "type": "logic_lt",  "label": "A < B",   "shape": "expression",
+      "params": [{"name":"a","type":"expression","default":"x"},{"name":"b","type":"expression","default":"0"}],
+      "code": "({a} < {b})" },
+    { "type": "logic_gt",  "label": "A > B",   "shape": "expression",
+      "params": [{"name":"a","type":"expression","default":"x"},{"name":"b","type":"expression","default":"0"}],
+      "code": "({a} > {b})" }
+  ]
+}

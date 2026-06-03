@@ -1,0 +1,18 @@
+{
+  "category": "Servo",
+  "color": "#9C27B0",
+  "blocks": [
+    { "type": "servo_attach", "label": "servo.attach()", "shape": "statement",
+      "params": [{"name":"name","type":"text","default":"myServo"},{"name":"pin","type":"number","default":"9"}],
+      "code": "{name}.attach({pin});" },
+    { "type": "servo_write",  "label": "servo.write()",  "shape": "statement",
+      "params": [{"name":"name","type":"text","default":"myServo"},{"name":"angle","type":"expression","default":"90"}],
+      "code": "{name}.write({angle});" },
+    { "type": "servo_read",   "label": "servo.read()",   "shape": "expression",
+      "params": [{"name":"name","type":"text","default":"myServo"}],
+      "code": "{name}.read()" },
+    { "type": "servo_detach", "label": "servo.detach()", "shape": "statement",
+      "params": [{"name":"name","type":"text","default":"myServo"}],
+      "code": "{name}.detach();" }
+  ]
+}

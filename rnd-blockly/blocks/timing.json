@@ -1,0 +1,14 @@
+{
+  "category": "Timing",
+  "color": "#795548",
+  "blocks": [
+    { "type": "delay_ms", "label": "delay(ms)",           "shape": "statement",
+      "params": [{"name":"ms","type":"expression","default":"1000"}], "code": "delay({ms});" },
+    { "type": "delay_us", "label": "delayMicroseconds()",  "shape": "statement",
+      "params": [{"name":"us","type":"expression","default":"500"}],  "code": "delayMicroseconds({us});" },
+    { "type": "millis",   "label": "millis()",             "shape": "expression",
+      "params": [], "code": "millis()" },
+    { "type": "micros",   "label": "micros()",             "shape": "expression",
+      "params": [], "code": "micros()" }
+  ]
+}

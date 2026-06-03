@@ -1,0 +1,17 @@
+{
+  "category": "Serial",
+  "color": "#8BC34A",
+  "blocks": [
+    { "type": "serial_begin",   "label": "Serial.begin()",   "shape": "statement",
+      "params": [{"name":"baud","type":"dropdown","default":"9600","options":["9600","19200","57600","115200"]}],
+      "code": "Serial.begin({baud});" },
+    { "type": "serial_print",   "label": "Serial.print()",   "shape": "statement",
+      "params": [{"name":"value","type":"expression","default":"x"}], "code": "Serial.print({value});" },
+    { "type": "serial_println", "label": "Serial.println()", "shape": "statement",
+      "params": [{"name":"value","type":"expression","default":"x"}], "code": "Serial.println({value});" },
+    { "type": "serial_read",    "label": "Serial.read()",    "shape": "expression",
+      "params": [], "code": "Serial.read()" },
+    { "type": "serial_available","label": "Serial.available()","shape": "expression",
+      "params": [], "code": "Serial.available()" }
+  ]
+}

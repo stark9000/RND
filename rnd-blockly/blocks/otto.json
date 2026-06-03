@@ -1,0 +1,29 @@
+{
+  "category": "Otto",
+  "color": "#2196F3",
+  "blocks": [
+    { "type": "otto_init",    "label": "Otto.init()",      "shape": "statement",
+      "params": [{"name":"yll","type":"number","default":"2"},{"name":"ylr","type":"number","default":"3"},{"name":"yfl","type":"number","default":"4"},{"name":"yfr","type":"number","default":"5"},{"name":"buzz","type":"number","default":"13"}],
+      "code": "Otto.init({yll}, {ylr}, {yfl}, {yfr}, true, {buzz});" },
+    { "type": "otto_walk",    "label": "Otto.walk()",      "shape": "statement",
+      "params": [{"name":"steps","type":"number","default":"4"},{"name":"speed","type":"number","default":"1000"},{"name":"dir","type":"dropdown","default":"1","options":["1 (forward)","-1 (backward)"]}],
+      "code": "Otto.walk({steps}, {speed}, {dir});" },
+    { "type": "otto_turn",    "label": "Otto.turn()",      "shape": "statement",
+      "params": [{"name":"steps","type":"number","default":"4"},{"name":"speed","type":"number","default":"1000"},{"name":"dir","type":"dropdown","default":"1","options":["1 (left)","-1 (right)"]}],
+      "code": "Otto.turn({steps}, {speed}, {dir});" },
+    { "type": "otto_jump",    "label": "Otto.jump()",      "shape": "statement",
+      "params": [{"name":"steps","type":"number","default":"1"},{"name":"speed","type":"number","default":"2000"}],
+      "code": "Otto.jump({steps}, {speed});" },
+    { "type": "otto_dance",   "label": "Otto.dance()",     "shape": "statement",
+      "params": [{"name":"steps","type":"number","default":"3"},{"name":"speed","type":"number","default":"1000"},{"name":"dir","type":"dropdown","default":"1","options":["1 (left)","-1 (right)"]}],
+      "code": "Otto.dance({steps}, {speed}, {dir});" },
+    { "type": "otto_sing",    "label": "Otto.sing()",      "shape": "statement",
+      "params": [{"name":"song","type":"dropdown","default":"S_connection","options":["S_connection","S_disconnection","S_surprise","S_OhOoh","S_happy","S_superHappy","S_sad","S_confused","S_fart1","S_fart2","S_fart3"]}],
+      "code": "Otto.sing({song});" },
+    { "type": "otto_gesture", "label": "Otto.gesture()",   "shape": "statement",
+      "params": [{"name":"gesture","type":"dropdown","default":"OttoHappy","options":["OttoHappy","OttoSuperHappy","OttoSad","OttoSleeping","OttoFart","OttoConfused","OttoLove","OttoAngry","OttoVictory","OttoFail"]}],
+      "code": "Otto.gesture({gesture});" },
+    { "type": "otto_distance","label": "Otto.getDistance()","shape": "expression",
+      "params": [], "code": "Otto.getDistance()" }
+  ]
+}

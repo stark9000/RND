@@ -1,0 +1,22 @@
+{
+  "category": "Variables",
+  "color": "#00BCD4",
+  "blocks": [
+    { "type": "var_int",       "label": "int var",   "shape": "statement",
+      "params": [{"name":"name","type":"text","default":"myVar"},{"name":"value","type":"expression","default":"0"}],
+      "code": "int {name} = {value};" },
+    { "type": "var_float",     "label": "float var", "shape": "statement",
+      "params": [{"name":"name","type":"text","default":"myFloat"},{"name":"value","type":"expression","default":"0.0"}],
+      "code": "float {name} = {value};" },
+    { "type": "var_bool",      "label": "bool var",  "shape": "statement",
+      "params": [{"name":"name","type":"text","default":"flag"},{"name":"value","type":"dropdown","default":"false","options":["true","false"]}],
+      "code": "bool {name} = {value};" },
+    { "type": "var_assign",    "label": "set var =", "shape": "statement",
+      "params": [{"name":"name","type":"text","default":"x"},{"name":"value","type":"expression","default":"0"}],
+      "code": "{name} = {value};" },
+    { "type": "var_increment", "label": "var ++",    "shape": "statement",
+      "params": [{"name":"name","type":"text","default":"x"}], "code": "{name}++;" },
+    { "type": "var_decrement", "label": "var --",    "shape": "statement",
+      "params": [{"name":"name","type":"text","default":"x"}], "code": "{name}--;" }
+  ]
+}

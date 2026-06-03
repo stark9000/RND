@@ -1,0 +1,24 @@
+{
+  "category": "Bitwise",
+  "color": "#607D8B",
+  "blocks": [
+    { "type": "bit_and",    "label": "A & B",   "shape": "expression",
+      "params": [{"name":"a","type":"expression","default":"x"},{"name":"b","type":"expression","default":"0xFF"}],
+      "code": "({a} & {b})" },
+    { "type": "bit_or",     "label": "A | B",   "shape": "expression",
+      "params": [{"name":"a","type":"expression","default":"x"},{"name":"b","type":"expression","default":"0x01"}],
+      "code": "({a} | {b})" },
+    { "type": "bit_xor",    "label": "A ^ B",   "shape": "expression",
+      "params": [{"name":"a","type":"expression","default":"x"},{"name":"b","type":"expression","default":"0xFF"}],
+      "code": "({a} ^ {b})" },
+    { "type": "bit_not",    "label": "~A",      "shape": "expression",
+      "params": [{"name":"a","type":"expression","default":"x"}],
+      "code": "(~{a})" },
+    { "type": "bit_lshift", "label": "A << B",  "shape": "expression",
+      "params": [{"name":"a","type":"expression","default":"x"},{"name":"b","type":"number","default":"1"}],
+      "code": "({a} << {b})" },
+    { "type": "bit_rshift", "label": "A >> B",  "shape": "expression",
+      "params": [{"name":"a","type":"expression","default":"x"},{"name":"b","type":"number","default":"1"}],
+      "code": "({a} >> {b})" }
+  ]
+}

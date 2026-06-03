@@ -1,0 +1,21 @@
+{
+  "category": "Arduino I/O",
+  "color": "#009688",
+  "blocks": [
+    { "type": "pin_mode",      "label": "pinMode()",      "shape": "statement",
+      "params": [{"name":"pin","type":"number","default":"13"},{"name":"mode","type":"dropdown","default":"OUTPUT","options":["OUTPUT","INPUT","INPUT_PULLUP"]}],
+      "code": "pinMode({pin}, {mode});" },
+    { "type": "digital_write", "label": "digitalWrite()", "shape": "statement",
+      "params": [{"name":"pin","type":"number","default":"13"},{"name":"value","type":"dropdown","default":"HIGH","options":["HIGH","LOW"]}],
+      "code": "digitalWrite({pin}, {value});" },
+    { "type": "digital_read",  "label": "digitalRead()",  "shape": "statement",
+      "params": [{"name":"pin","type":"number","default":"2"},{"name":"var","type":"text","default":"val"}],
+      "code": "int {var} = digitalRead({pin});" },
+    { "type": "analog_write",  "label": "analogWrite()",  "shape": "statement",
+      "params": [{"name":"pin","type":"number","default":"9"},{"name":"value","type":"expression","default":"128"}],
+      "code": "analogWrite({pin}, {value});" },
+    { "type": "analog_read",   "label": "analogRead()",   "shape": "expression",
+      "params": [{"name":"pin","type":"number","default":"0"}],
+      "code": "analogRead({pin})" }
+  ]
+}

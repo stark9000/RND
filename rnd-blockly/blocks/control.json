@@ -1,0 +1,52 @@
+{
+  "category": "Control",
+  "color": "#FF9800",
+  "blocks": [
+    {
+      "type": "setup",   "label": "setup()",   "shape": "hat",
+      "params": [], "code": "void setup() {\n{children}}"
+    },
+    {
+      "type": "loop",    "label": "loop()",    "shape": "hat",
+      "params": [], "code": "void loop() {\n{children}}"
+    },
+    {
+      "type": "if",      "label": "if",        "shape": "statement",
+      "params": [ { "name": "condition", "type": "expression", "default": "x > 0" } ],
+      "code": "if ({condition}) {\n{children}}"
+    },
+    {
+      "type": "if_else", "label": "if / else", "shape": "statement",
+      "params": [ { "name": "condition", "type": "expression", "default": "x > 0" } ],
+      "code": "if ({condition}) {\n{children}} else {\n}"
+    },
+    {
+      "type": "while",   "label": "while",     "shape": "statement",
+      "params": [ { "name": "condition", "type": "expression", "default": "true" } ],
+      "code": "while ({condition}) {\n{children}}"
+    },
+    {
+      "type": "for",     "label": "for loop",  "shape": "statement",
+      "params": [
+        { "name": "var",  "type": "text",   "default": "i" },
+        { "name": "from", "type": "number", "default": "0" },
+        { "name": "to",   "type": "number", "default": "10" },
+        { "name": "step", "type": "number", "default": "1" }
+      ],
+      "code": "for (int {var} = {from}; {var} < {to}; {var} += {step}) {\n{children}}"
+    },
+    {
+      "type": "break",    "label": "break",    "shape": "terminal",
+      "params": [], "code": "break;"
+    },
+    {
+      "type": "continue", "label": "continue", "shape": "terminal",
+      "params": [], "code": "continue;"
+    },
+    {
+      "type": "return",   "label": "return",   "shape": "terminal",
+      "params": [ { "name": "value", "type": "expression", "default": "0" } ],
+      "code": "return {value};"
+    }
+  ]
+}

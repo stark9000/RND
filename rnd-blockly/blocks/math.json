@@ -1,0 +1,112 @@
+{
+  "category": "Math",
+  "color": "#3F51B5",
+  "blocks": [
+    {
+      "type": "math_add",      "label": "A + B",
+      "canHaveChildren": false,
+      "params": [
+        { "name": "a", "type": "expression", "default": "x" },
+        { "name": "b", "type": "expression", "default": "1" }
+      ],
+      "code": "({a} + {b})"
+    },
+    {
+      "type": "math_sub",      "label": "A - B",
+      "canHaveChildren": false,
+      "params": [
+        { "name": "a", "type": "expression", "default": "x" },
+        { "name": "b", "type": "expression", "default": "1" }
+      ],
+      "code": "({a} - {b})"
+    },
+    {
+      "type": "math_mul",      "label": "A * B",
+      "canHaveChildren": false,
+      "params": [
+        { "name": "a", "type": "expression", "default": "x" },
+        { "name": "b", "type": "expression", "default": "2" }
+      ],
+      "code": "({a} * {b})"
+    },
+    {
+      "type": "math_div",      "label": "A / B",
+      "canHaveChildren": false,
+      "params": [
+        { "name": "a", "type": "expression", "default": "x" },
+        { "name": "b", "type": "expression", "default": "2" }
+      ],
+      "code": "({a} / {b})"
+    },
+    {
+      "type": "math_mod",      "label": "A % B",
+      "canHaveChildren": false,
+      "params": [
+        { "name": "a", "type": "expression", "default": "x" },
+        { "name": "b", "type": "expression", "default": "2" }
+      ],
+      "code": "({a} % {b})"
+    },
+    {
+      "type": "math_abs",      "label": "abs(A)",
+      "canHaveChildren": false,
+      "params": [
+        { "name": "a", "type": "expression", "default": "x" }
+      ],
+      "code": "abs({a})"
+    },
+    {
+      "type": "math_map",
+      "label": "map()",
+      "canHaveChildren": false,
+      "params": [
+        { "name": "val",  "type": "expression", "default": "x"   },
+        { "name": "in1",  "type": "number",     "default": 0     },
+        { "name": "in2",  "type": "number",     "default": 1023  },
+        { "name": "out1", "type": "number",     "default": 0     },
+        { "name": "out2", "type": "number",     "default": 255   }
+      ],
+      "code": "map({val}, {in1}, {in2}, {out1}, {out2})"
+    },
+    {
+      "type": "math_constrain",
+      "label": "constrain()",
+      "canHaveChildren": false,
+      "params": [
+        { "name": "val", "type": "expression", "default": "x"  },
+        { "name": "lo",  "type": "number",     "default": 0    },
+        { "name": "hi",  "type": "number",     "default": 255  }
+      ],
+      "code": "constrain({val}, {lo}, {hi})"
+    },
+    {
+      "type": "math_random",
+      "label": "random()",
+      "canHaveChildren": false,
+      "params": [
+        { "name": "lo", "type": "number", "default": 0   },
+        { "name": "hi", "type": "number", "default": 100 }
+      ],
+      "code": "random({lo}, {hi})"
+    },
+    {
+      "type": "math_sqrt",
+      "label": "sqrt(A)",
+      "canHaveChildren": false,
+      "params": [
+        { "name": "a", "type": "expression", "default": "x" }
+      ],
+      "code": "sqrt({a})"
+    },
+    {
+      "type": "math_pow",
+      "label": "pow(A, B)",
+      "canHaveChildren": false,
+      "params": [
+        { "name": "a", "type": "expression", "default": "x" },
+        { "name": "b", "type": "number",     "default": 2   }
+      ],
+      "code": "pow({a}, {b})"
+    }
+  ]
+}
